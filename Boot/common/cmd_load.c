@@ -81,7 +81,7 @@ int do_load_serial_bin (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 	
 	offset = strtoul(argv[2], NULL, 16);
 	printf ("## Ready for binary (ymodem) download "
-	"to 0x%08lX... in %s\r\n", offset, (strcmp(argv[1], "flash")? "sram" : "flash"));
+	"to 0x%08lX... in %s\r\n", offset, (strcmp(argv[1], "flash")? "external sram" : "flash"));
 	
 	addr = load_serial_ymodem (argv[1], offset);
 	

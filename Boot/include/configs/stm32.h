@@ -23,7 +23,7 @@ typedef unsigned long ulong;
 #define CFG_PROMPT						"#"
 #define CFG_LOAD_ADDR					0x68000000
 #define CFG_MEMTEST_START			0x68000000
-#define CFG_MEMTEST_END				0x68001000
+#define CFG_MEMTEST_END				0x6807FFFF
 
 
 #define CFG_COMMANDS					1
@@ -43,5 +43,7 @@ typedef unsigned long ulong;
 
 
 #define disable_interrupts() __disable_irq()
+
+void run_app(void);
 
 #endif

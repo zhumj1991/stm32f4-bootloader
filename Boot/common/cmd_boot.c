@@ -15,6 +15,8 @@ int do_go (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 
 	printf ("## Starting application at 0x%08lX ...\r\n", addr);
 
+	run_app();
+	
 	/*
 	 * pass address parameter as argv[0] (aka command name),
 	 * and all remaining args

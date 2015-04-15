@@ -2,7 +2,7 @@
 
 
 
-static void run_app(void)
+void run_app(void)
 {
 
 	typedef void (* fun_type)(void);
