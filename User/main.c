@@ -27,6 +27,7 @@ static void hw_config()
 	//bsp_iwdg_init(600);
 	//bsp_tim_count_init(999);
 	bsp_spi_flash_init();
+//
 }
 
 static int abortboot(int bootdelay)
