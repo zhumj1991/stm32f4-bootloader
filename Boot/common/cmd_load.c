@@ -52,7 +52,7 @@ static ulong load_serial_ymodem(char *type, ulong offset)
 	xyzModem_stream_close (&err);
 	xyzModem_stream_terminate (false, &getcxmodem);
 
-	if (!strcmp(type, "flash")) {
+	if (!strcmp(type, "flash") && size) {
 
 		char buf[4];
 		buf[0] = (char) size;
